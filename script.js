@@ -27,6 +27,8 @@ satisfiedBtn.addEventListener("click", ()=>{
 })
 
 sendReview.addEventListener("click", ()=>{
+    if (selectedBtn){
     message.innerHTML = `<p><strong>Thank you! <br><br>Feedback: ${selectedBtn}</strong> <br><br>We'll use your feedback to improve<br> our customer support.</p>`
     message.classList.add("msg")
+    }
     })
